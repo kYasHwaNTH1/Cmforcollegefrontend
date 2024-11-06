@@ -9,7 +9,7 @@ const Nabafter = () => {
   const navigate=useNavigate()
   const setToken=useSetRecoilState(counterToken)
   const role=useRecoilValue(roleforall)
-
+   console.log(role+"from navbar after")
   return (
     <div
       className="h-22 w-full bg-white flex justify-between items-center relative"
@@ -45,7 +45,7 @@ const Nabafter = () => {
                   My Issues
                 </h3>
               </Link>
-            {( role=== 'user' || role==='admin' ) && <Link to="/postissue" >
+            {( role == 'users' || role == 'admin' ) && <Link to="/postissue" >
                 <h3 className="text-sm px-4 py-2 hover:bg-gray-100 cursor-pointer">
                   Post an Issue
                 </h3>

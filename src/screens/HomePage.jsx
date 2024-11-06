@@ -1,9 +1,6 @@
 import React from 'react'
 import { useRecoilValue } from 'recoil'
 import { firstname } from '../statemag'
-
-
-
 const HomePage = () => {
 const fn=useRecoilValue(firstname);
 
