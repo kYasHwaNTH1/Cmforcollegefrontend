@@ -1,13 +1,14 @@
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { useRecoilValue,useSetRecoilState } from "recoil";
-import { counterToken, roleforall } from "../statemag";
+import { counterToken, firstname, roleforall } from "../statemag";
 
 const Nabafter = () => {
   const [flag, setFlag] = useState(false);
   const [personflag, setPersonflag] = useState(false);
   const navigate=useNavigate()
   const setToken=useSetRecoilState(counterToken)
+const setFirstname=useSetRecoilState(firstname)
   const role=useRecoilValue(roleforall)
    console.log(role+"from navbar after")
   return (
@@ -87,6 +88,7 @@ const Nabafter = () => {
                 onClick={(e)=>{
                   e.preventDefault();  
         setToken(null)
+setFirstname(null)
                   navigate("/")
                 }}
                 >
