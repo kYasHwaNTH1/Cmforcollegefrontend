@@ -22,7 +22,7 @@ const [msg,setMsg]=useState("")
     const fetchd = async () => {
       try {
         const res = await axios.get(
-          `http://localhost:3000/api/${role}/myissues`,
+          `https://cmforcollege-1.onrender.com/api/${role}/myissues`,
           {
             headers: {
               token: token,

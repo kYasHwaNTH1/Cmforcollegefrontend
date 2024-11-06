@@ -17,7 +17,7 @@ const Admingettech = () => {
 //   const handleSubmit=async(e)=>{
 //         e.preventDefault();
 //         try{
-//         const res=await axios.get(`http://localhost:3000/api/admin/technicianissues`,{
+//         const res=await axios.get(`https://cmforcollege-1.onrender.com/api/admin/technicianissues`,{
 //             headers:{
 //                 token:token,
 //                 email:email,
@@ -37,7 +37,7 @@ const handleSubmit=async(e)=>{
     const fetchd = async () => {
       try {
         const res = await axios.get(
-          `http://localhost:3000/api/admin/gettechnicians`,
+          `https://cmforcollege-1.onrender.com/api/admin/gettechnicians`,
           {
             headers: {
               token: token,

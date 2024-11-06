@@ -28,7 +28,7 @@ const Signup = () => {
     console.log(role);
     try {
       const response = await axios.post(
-        `http://localhost:3000/api/${role}/signup`,
+        `https://cmforcollege-1.onrender.com/api/${role}/signup`,
         formdata
       );
       if (response.data.success) {

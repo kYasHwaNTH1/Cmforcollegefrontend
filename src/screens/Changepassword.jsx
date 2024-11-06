@@ -30,7 +30,7 @@ const Changepassword = () => {
             alert("Please enter all the fields")
         }
         try{
-        const response=await axios.put(`http://localhost:3000/api/${role}/changepassword`,
+        const response=await axios.put(`https://cmforcollege-1.onrender.com/api/${role}/changepassword`,
             formd,{
                headers:{
                 token:token,

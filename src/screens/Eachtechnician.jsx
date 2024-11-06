@@ -14,7 +14,7 @@ const Eachtechnician = () => {
     useEffect(() => {
         const fetchTechnicianIssues = async () => {
             try {
-                const res = await axios.get(`http://localhost:3000/api/admin/technicianissues/${id}`, {
+                const res = await axios.get(`https://cmforcollege-1.onrender.com/api/admin/technicianissues/${id}`, {
                     headers: {
                         token: token,
                         "Content-Type": "application/json",

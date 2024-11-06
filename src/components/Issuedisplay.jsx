@@ -15,7 +15,7 @@ const Issuedisplay = ({ issue }) => {
 
     try {
       const res = await axios.put(
-        `http://localhost:3000/api/${role}/changestatus`,
+        `https://cmforcollege-1.onrender.com/api/${role}/changestatus`,
         {}, 
         {
           headers: {
